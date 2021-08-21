@@ -25,3 +25,29 @@ img{
 	font-size: 35px;
 	padding-bottom: 3px;
 }
+
+.h3, h3 {
+    font-size: 1.75rem;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.memory-area, .storage-area, .delivery-options {
+    margin-bottom: 30px;
+}
+button {
+    padding: 7px 15px;
+    border-radius: 5px;
+    background: #FFF;
+    border: 1px solid #000;
+}
+.container, .container-lg, .container-md, .container-sm, .container-xl{
+    max-width: 1330px;
+}
+tr {
+    border-bottom: 1px solid #DDD;
+    padding-bottom: 5px;
+    display: inherit;
+    margin-bottom: 5px;
+    line-height: 31px;
+}
