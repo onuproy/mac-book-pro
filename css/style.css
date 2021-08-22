@@ -22,11 +22,12 @@ img{
 	width: 85%;
 }
 .product-content h2 {
-	font-size: 35px;
-	padding-bottom: 3px;
+    font-size: 35px;
+    padding-bottom: 3px;
+    font-weight: 500;
 }
 
-.h3, h3 {
+h3 {
     font-size: 1.75rem;
     font-size: 16px;
     font-weight: 600;
@@ -50,4 +51,15 @@ tr {
     display: inherit;
     margin-bottom: 5px;
     line-height: 31px;
+    
+}
+td{
+    font-weight: 600;
+}
+tr td:first-child {
+    width: 190px;
+    display: inline-block;
+}
+tbody, td, tfoot, th, thead, tr {
+    padding: 7px 8px;
 }
