@@ -31,6 +31,7 @@ h3 {
     font-size: 1.75rem;
     font-size: 16px;
     font-weight: 600;
+    color: #000;
 }
 
 .memory-area, .storage-area, .delivery-options {
@@ -41,6 +42,7 @@ button {
     border-radius: 5px;
     background: #FFF;
     border: 1px solid #000;
+    margin-right: 4px;
 }
 .container, .container-lg, .container-md, .container-sm, .container-xl{
     max-width: 1330px;
@@ -51,10 +53,10 @@ tr {
     display: inherit;
     margin-bottom: 5px;
     line-height: 31px;
-    
 }
 td{
     font-weight: 600;
+    color: #000;
 }
 tr td:first-child {
     width: 190px;
@@ -62,4 +64,53 @@ tr td:first-child {
 }
 tbody, td, tfoot, th, thead, tr {
     padding: 7px 8px;
+}
+
+button:hover{
+    background-color: #000;
+    color: #FFF;
+    transition: 0.4s;
+}
+button:focus {
+    border: 1px solid #000;
+    box-shadow: 0 0 5px #DDD;
+    background: #000;
+    color: #FFF;
+}
+tr:last-child{
+    border-top: 2px solid #000;
+}
+.promocode-area {
+    padding-top: 20px;
+}
+.promocode-area input {
+    height: 45px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 206px;
+    font-size: 16px;
+    outline: none;
+    padding: 0 15px;
+}
+#promo-button {
+    padding: 0 18px;
+    width: auto;
+    height: 45px;
+    background: #DC3545;
+    color: #FFF;
+    border-color: #DC3545;
+}
+.promocode-area h2 {
+    font-size: 16px;
+    font-weight: 500;
+}
+.bottom-total-price {
+    text-align: center;
+    margin-top: 15px;
+    border-top: 1px solid #CCC;
+    padding-top: 22px;
+}
+.bottom-total-price p {
+    font-size: 40px;
+    font-weight: 500;
 }
