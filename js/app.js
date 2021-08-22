@@ -37,6 +37,7 @@ const delivery = document.getElementById('delivery-cost');
 
 //update total code
 const totalPrice = document.getElementById('total-price'); 
+const totalBottomPrice = document.getElementById('bottom-price'); 
 function update(){
     const mackBookMemory = parseFloat(macbookmemory.innerText);
     const mackBookStorage = parseFloat(macbookstorage.innerText);
@@ -44,4 +45,19 @@ function update(){
     const mainPrice = 1299;
     const mackBookTotalPrice = mackBookMemory + mackBookStorage + deliveryCost + mainPrice;
     totalPrice.innerText = mackBookTotalPrice;
+    totalBottomPrice.innerText = mackBookTotalPrice;
 }
+
+//promo code
+document.getElementById('promo-button').addEventListener('click',function(){
+	const promoField = document.getElementById('promofield');
+	const promoInput = promoField.value;
+	if(promoInput == 'stevekaku'){
+		const discountPrice = parseInt((totalPrice.innerText)*80) / 100;
+		totalBottomPrice.innerText = discountPrice;
+	}
+	else{
+		alert("Invalid Promo Code");
+	}
+	promoField.value = '';
+});

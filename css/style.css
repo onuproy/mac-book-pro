@@ -38,7 +38,7 @@ h3 {
     margin-bottom: 30px;
 }
 button {
-    padding: 7px 15px;
+    padding: 9px  15px;
     border-radius: 5px;
     background: #FFF;
     border: 1px solid #000;
@@ -59,7 +59,7 @@ td{
     color: #000;
 }
 tr td:first-child {
-    width: 190px;
+    width: 232px;
     display: inline-block;
 }
 tbody, td, tfoot, th, thead, tr {
@@ -113,4 +113,9 @@ tr:last-child{
 .bottom-total-price p {
     font-size: 40px;
     font-weight: 500;
+}
+span#bottom-price {
+    width: 200px;
+    display: inline-block;
+    text-align: left;
 }
