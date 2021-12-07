@@ -65,5 +65,8 @@ document.getElementById('promo-button').addEventListener('click', function () {
     promoField.value = '';
 });
 
+const student1= {name: "rafique", marks: 79, result: "A+"};
+
+console.log(student1.mark + 1);
 
 // const discountPrice = parseInt(totalPrice.innerText) - (parseInt(totalPrice.innerText)*20)/100;
